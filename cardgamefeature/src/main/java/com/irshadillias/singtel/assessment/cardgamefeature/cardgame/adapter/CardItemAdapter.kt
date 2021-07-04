@@ -35,6 +35,10 @@ class CardItemAdapter (private val cardListerner : CardGameListener):
         )
     }
 
+    fun reset(){
+        CardItemViewHolder.matches = 0
+    }
+
     override fun onBindViewHolder(holder: CardItemViewHolder, position: Int) {
         val card = getItem(position)
         if (card != null) {
@@ -76,10 +80,9 @@ class CardItemAdapter (private val cardListerner : CardGameListener):
                     }else if(!selectCard.equals(binding.cardNumber.text.toString())){
                         Handler().postDelayed({
                             resetPair()
-                        }, 2000)
+                        }, 1500)
                     }else{
                         matches++
-                        println("${matches} >>>> ${listCount/2}")
                         if(matches >= listCount/2){
                             cardListerner.gameSuccess()
                         }

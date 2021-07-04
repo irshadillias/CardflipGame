@@ -19,8 +19,8 @@ class CardFlipGameViewModel @Inject constructor() : BaseViewModel() {
     fun generateCard(){
         var dataset : MutableList<CardItem> = ArrayList()
         for (cardIndex in 1..CARD_PAIRS_VALUE){
-            dataset.add(CardItem(cardIndex*2, cardIndex.toString()) )
-            dataset.add(CardItem((cardIndex*2)+1, cardIndex.toString()) )
+            dataset.add(CardItem(Math.random(), cardIndex.toString()) )
+            dataset.add(CardItem(Math.random(), cardIndex.toString()) )
         }
         dataset.shuffle()
         _cardSelCount.value = 0

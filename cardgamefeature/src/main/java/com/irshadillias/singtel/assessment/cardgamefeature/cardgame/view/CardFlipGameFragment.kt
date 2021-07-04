@@ -25,6 +25,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class CardFlipGameFragment: BaseFragment() {
     private val mCardFlipGameViewModel by viewModels<CardFlipGameViewModel>()
     lateinit var cardAdapter:CardItemAdapter
+    lateinit var binding:FragmentCardgameBinding
     override fun layoutId() = R.layout.fragment_cardgame
 
     override fun onCreateView(
@@ -32,7 +33,7 @@ class CardFlipGameFragment: BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentCardgameBinding.inflate(inflater, container, false).
+        binding = FragmentCardgameBinding.inflate(inflater, container, false).
             apply {
                 viewModel =  mCardFlipGameViewModel
                 lifecycleOwner = viewLifecycleOwner
@@ -61,8 +62,6 @@ class CardFlipGameFragment: BaseFragment() {
             }
 
         })
-        binding.cardList.adapter = cardAdapter
-
         mCardFlipGameViewModel.generateCard()
         with(mCardFlipGameViewModel) {
             observe(cardList, ::renderCardList)
@@ -73,8 +72,10 @@ class CardFlipGameFragment: BaseFragment() {
 
 
     private fun renderCardList(cardlist: List<CardItem>?){
+        binding.cardList.adapter = cardAdapter
         cardAdapter.submitList(cardlist)
         cardAdapter.notifyDataSetChanged()
+        cardAdapter.reset()
     }
 
     private fun handleFailure(failure: Failure?) {
