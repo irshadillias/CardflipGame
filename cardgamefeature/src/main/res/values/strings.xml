@@ -1,0 +1,9 @@
+<resources>
+    <string name="card_title_text">Card flip game</string>
+    <string name="cardgmaereset">Reset</string>
+    <string name="cardgamestep">Step :</string>
+    <string name="title_success">Congratulations</string>
+    <string name="success_msg">You win this game by %1$d steps!</string>
+    <string name="sucess_ok">Try Another Round</string>
+    <string name="start_game">Start Card Game</string>
+</resources>

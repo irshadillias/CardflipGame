@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Sunflower" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorOnSurface">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorSecondary">@color/colorOnPrimary</item>
+        <item name="android:colorBackground">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.Theme.Sunflower">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="BaseToolbarStyle">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:theme">@style/BaseToolbarTheme</item>
+        <item name="titleTextAppearance">@style/CustomTitleTextAppearance</item>
+    </style>
+
+    <style name="BaseToolbarTheme">
+        <item name="android:textColorPrimary">@color/colorTextSecondary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+    </style>
+
+    <style name="CustomTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ShapeAppearance.Sunflower.Card" parent="ShapeAppearance.MaterialComponents">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeTopLeft">@dimen/card_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/card_corner_radius</item>
+        <item name="cornerSizeBottomRight">@dimen/card_corner_radius</item>
+        <item name="cornerSizeBottomLeft">@dimen/card_corner_radius</item>
+    </style>
+
+</resources>

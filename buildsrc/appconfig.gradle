@@ -1,0 +1,7 @@
+buildscript {
+    ext.appconfig = [
+            "appId"             : "com.irshadillias.singtel.assessment.singtelcardgame",
+            "versionCode"      : 1,
+            "versionName"       : "1.0"
+    ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.irshadillias.singtel.assessment.cardgamefeature">
+
+    <application>
+        <activity
+            android:name="com.irshadillias.singtel.assessment.cardgamefeature.base.CardGameActivity"
+            android:label="@string/card_title_text">
+        </activity>
+
+    </application>
+
+
+
+</manifest>

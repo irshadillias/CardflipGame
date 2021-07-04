@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base colors-->
+    <color name="colorPrimary">#49bb79</color>
+    <color name="colorPrimaryDark">#005d2b</color>
+    <color name="colorSurface">#fafafa</color>
+    <color name="colorOnPrimary">#ffff63</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorSecondary">#fafafa</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#fafafa</color>
+    <color name="colorblue">#0000ff</color>
+    <color name="translucentBackground">#005d2b</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_margin">16dp</dimen>
+
+    <dimen name="onedp">1dp</dimen>
+    <dimen name="twodp">2dp</dimen>
+    <dimen name="threedp">3dp</dimen>
+    <dimen name="fourdp">4dp</dimen>
+    <dimen name="fivedp">5dp</dimen>
+    <dimen name="sixdp">6dp</dimen>
+    <dimen name="sevendp">7dp</dimen>
+    <dimen name="ninedp">8dp</dimen>
+    <dimen name="tendp">9dp</dimen>
+    <dimen name="elevendp">10dp</dimen>
+
+    <dimen name="card_side_margin">12dp</dimen>
+    <dimen name="card_bottom_margin">26dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+
+</resources>
